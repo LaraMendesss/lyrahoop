@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I 🖤 Lyra Hoop</title>
+    <style>
+      .content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 10px 60px;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      }
+      h1 {
+        font-family: Arial, Helvetica, sans-serif, sans-serif;
+        text-align: left;
+        margin: 0 auto;
+        padding: 0;
+        border: 0 auto;
+        color: #ffb5b5;
+        font-size: 100px;
+        font-weight: bolder;
+        font-stretch: extra-expanded;
+      }
+      h2 {
+        text-align: right;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        border: 50px;
+        font-size: 30px;
+        margin: 40px 0;
+      }
+
+      img {
+        max-width: 70%;
+        border-radius: 20px 130px 20px 130px;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        border-color: #ffb5b5;
+        border: 30px;
+      }
+      p {
+        text-align: justify;
+        font-family: sans-serif;
+        text-decoration: solid;
+        margin: 20px;
+        line-height: 30px;
+      }
+      button {
+        padding: 20px;
+        display: block;
+        margin: 20px auto;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 40px;
+        font-size: 22px;
+        font-weight: bold;
+        color: black;
+        background-color: white;
+        color: #ffb5b5;
+        transition: all 1s linear ease-in-out;
+      }
+      button:hover {
+        padding: 20px;
+        display: block;
+        margin: 20px auto;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 40px;
+        font-size: 22px;
+        font-weight: bold;
+        cursor: pointer;
+        color: white;
+        background-color: #ffb5b5;
+        opacity: 0.8;
+        box-shadow: 5px 5px 2px black;
+      }
+      span {
+        text-align: center;
+        display: block;
+      }
+      h3 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        border: 20px;
+        font-size: 30px;
+        margin: 20px;
+        font-stretch: extra-expanded;
+        background-color: #ffb5b5;
+        border-radius: 40px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Lyra Hoop.</h1>
+      <hr />
+      <h2>Dare to fly with us! 🖤</h2>
+
+      <img
+        src="
+    https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/103/original/fiu-laura-benvenuti.jpg?1688427884"
+        width="400"
+      />
+      <h3>LYRA or AERIAL HOOP</h3>
+      <p>
+        <strong
+          >It’s my way of escaping the real world. When I jump on the ring I
+          feel I can fly, I just hear the music and transport myself to a
+          beautiful moment. I just dance along with the ring.</strong
+        >
+        <br />
+        The Lyra is a large metal or aluminum ring that is suspended from the
+        ceiling. Performers use the hoop to execute a variety of movements,
+        including spins, poses, and drops. <br /><strong
+          >The aerial hoop offers a variety of physical and mental
+          benefits.</strong
+        >
+        It’s a full-body workout that helps to build strength, flexibility, and
+        endurance. It also improves balance, coordination, and spatial
+        awareness.
+        <strong
+          >Plus, is a fun and creative way to express yourself and build
+          confidence. <br />
+          The origins of aerial hoop </strong
+        >can be traced back to the traditional circus arts of the
+        <strong>19th century</strong>. Originally, the aerial hoop was made of a
+        solid wooden circle covered in cloth. It was suspended from the ceiling
+        by ropes or chains and used in combination with other aerial apparatus
+        such as trapeze and rope.
+
+        <br />
+
+        <button><em>Sign up for a free class</em> 🖤</button>
+        <br />
+        <span>
+          For more info:
+          <a href="https://en.wikipedia.org/wiki/Aerial_hoop" target="_blank"
+            >Wikipedia</a
+          >
+          // Page coded by
+          <a
+            href="https://www.linkedin.com/in/lara-chagas-mendes/"
+            target="_blank"
+          >
+            Lara Mendes</a
+          ></span
+        >
+      </p>
+    </div>
+    <script>
+      function freeClass() {
+        let city = prompt("In which city do you live?");
+        if (city === "New York") {
+          let h3 = document.querySelector("h3");
+          h3.innerHTML = "Pop up on our Manhattan Studio!";
+        } else {
+          let h3 = document.querySelector("h3");
+          h3.innerHTML = "You're welcome @ our Virtual Class on Mondays!";
+          alert("We don't have a studio in your hometown yet, but... ⬇️⬇️⬇️");
+        }
+      }
+      let contactButton = document.querySelector("button");
+      contactButton.addEventListener("click", freeClass);
+    </script>
+  </body>
+</html>
